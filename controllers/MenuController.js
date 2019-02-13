@@ -31,7 +31,6 @@ module.exports = class Menucontroller {
                     break;
                 case "Get the date":
                     this.getDate();
-                    break;
                 case "remind me":
                     this.remindMe();
                     break;
