@@ -58,5 +58,6 @@ module.exports = class Menucontroller {
     getDate() {
         var date = new Date().toString();
         console.log(date);
+        this.main();
     }
 }
