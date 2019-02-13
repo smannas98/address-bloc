@@ -51,7 +51,7 @@ module.exports = class Menucontroller {
 
     addContact() {
         inquirer.prompt(this.book.addContactQuestions).then((answers) => {
-            this.book.addContact(answers.name, answers.phone, ansers.email).then((contact) => {
+            this.book.addContact(answers.name, answers.phone, answers.email).then((contact) => {
                 console.log('contact added successfully!');
                 this.main();
             }).catch((err) => {
