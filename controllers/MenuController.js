@@ -30,7 +30,7 @@ module.exports = class Menucontroller {
                     this.exit();
                     break;
                 case "Get the date":
-                    this.getDate();
+                    this.getDate(); 
                     break;
                 case "remind me":
                     this.remindMe();
@@ -51,7 +51,7 @@ module.exports = class Menucontroller {
 
     addContact() {
         inquirer.prompt(this.book.addContactQuestions).then((answers) => {
-            this.book.addContact(answers.name, answers.phone).then((contact) => {
+            this.book.addContact(answers.name, answers.phone, answers.email).then((contact) => {
                 console.log('contact added successfully!');
                 this.main();
             }).catch((err) => {
