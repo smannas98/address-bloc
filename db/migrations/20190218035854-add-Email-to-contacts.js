@@ -6,6 +6,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-   return queryInterface.removeColumn('Contacts', 'email');
+    return queryInterface.removeColumn('Contacts', 'email');
   }
 };
